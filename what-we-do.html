@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/leone.css" />
+    <title>What we do</title>
+    <style>
+      .first {
+        width: 100vw;
+        /* height: 50vh; */
+        position: relative;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding-right: 5rem; */
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .body {
+        background-color: #ffff;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0;
+      }
+      .first-max {
+        background-image: url("../css/Rectangle20.png");
+        height: 90vh;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+      }
+      .hero {
+        display: flex;
+      }
+      .hero-1 {
+        padding-left: 2rem;
+        width: 70vw;
+      }
+
+      .first-2 {
+        color: #fff;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+      .main-nav {
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.8s;
+      }
+      .main-nav {
+      }
+      .main-nav:hover,
+      .main-nav:active {
+        transform: scale(1.1);
+        color: rgb(182, 172, 190);
+      }
+
+      .s {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+      .s-1 {
+        width: 60vw;
+        font-size: 1.1rem;
+      }
+      .second {
+        padding: 1rem;
+      }
+      .im {
+        width: 100%;
+      }
+      .second-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+        /* justify-content: center; */
+      }
+      .pic-1 {
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+      .pic-2 {
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+      .grid-3-cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        row-gap: 3rem;
+      }
+
+      .pic-3 a {
+        text-decoration: none;
+        color: black;
+      }
+      l {
+        color: red;
+      }
+      .pic-3 {
+        margin-top: auto;
+      }
+      .third {
+        background-color: #4d4d98;
+        /* padding-top: 2;
+  padding-bottom: 2rem; */
+      }
+
+      .five {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 50vw;
+        padding: 1rem;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .third-1 {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .fi-1 {
+        font-size: 0.9rem;
+      }
+
+      .fi-2 {
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+      .fi-3 {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #a0a0a0;
+      }
+      .three {
+        display: fixed;
+        color: #fff;
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        font-weight: 600;
+      }
+      .third-1 {
+        height: 25rem;
+        /* margin-bottom: 10rem; */
+        overflow: scroll;
+      }
+
+      .five-0 {
+        margin-right: 4rem;
+      }
+      .third {
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .none {
+        display: none;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 60vw;
+        margin-left: 2rem;
+      }
+
+      @media (max-width: 950px) {
+        .grid-3-cols {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 940px) {
+        .first-2 {
+          font-size: 3rem;
+        }
+      }
+      @media (max-width: 798px) {
+        .first-2 {
+          font-size: 2rem;
+        }
+        .main-nav {
+          font-size: 1.2rem;
+        }
+      }
+      @media (max-width: 775px) {
+        .three {
+          margin-left: 0.8rem;
+        }
+        .third-1 {
+          display: flex;
+          flex-direction: column;
+        }
+        .none {
+          display: flex;
+        }
+      }
+      @media (max-width: 600px) {
+        .grid-3-cols {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 500px) {
+        .first-2 {
+          font-size: 1.2rem;
+        }
+        .main-nav {
+          font-size: 1rem;
+        }
+        .s-1 {
+          width: 100vw;
+        }
+        .first-max {
+          height: 40vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-max">
+      <div class="hero">
+        <div class="hero-1">
+          <div class="first-2">
+            IT services you need to modernize operations
+          </div>
+          <div class="first-3">
+            <a href="#" class="main-nav"> Our Products > </a>
+          </div>
+        </div>
+
+        <div class="hero-2"></div>
+      </div>
+    </div>
+    <!-- //////////////////////////////// -->
+
+    <div class="body">
+      <div class="s">
+        <div class="s-1">
+          We are committed to providing flexible, low-cost solutions to our
+          customers that will help make their businesses run more smoothly and
+          profitably.
+        </div>
+      </div>
+      <!-- //////////////////////////////// -->
+
+      <div class="second grid-3-cols">
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle21.png" alt="" />
+          </div>
+          <div class="pic-1">Consulting</div>
+          <div class="pic-2">
+            Experts analyze the existing problems and needs in order to define a
+            clear set of goals to be reached with CRM implementation. With the
+            involvement of your management team our consultants define your “as
+            is” process and create the final “to be” scheme.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle22.png" alt="" />
+          </div>
+          <div class="pic-1">Project Planning</div>
+          <div class="pic-2">
+            We calculate the budget and development time frames. For larger
+            projects with heavy customization and/or integration requirements,
+            it may be necessary to deliver the solution in several iterations,
+            in order to minimize the time before the most critical changes are
+            made.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle23.png" alt="" />
+          </div>
+          <div class="pic-1">Tranning</div>
+          <div class="pic-2">
+            Trainings on using the new system are organized for your staff
+            members so they feel comfortable with utilizing its vast
+            functionality once the system is installed.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle24.png" alt="" />
+          </div>
+          <div class="pic-1">Prototype Creation</div>
+          <div class="pic-2">
+            To enhance your understanding of the future system’s capabilities,
+            our consultants use your requirements to prepare a live demo
+            (working prototype) of the key elements of your targeted “to be”
+            process. This lets your team see and review the look of the end
+            result.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle25.png" alt="" />
+          </div>
+          <div class="pic-1">Design</div>
+          <div class="pic-2">
+            Trainings on using the new system are organized for your staff
+            members so they feel comfortable with utilizing its vast
+            functionality once the system is installedExperts analyze the
+            existing problems and needs in order to define a clear set of goals
+            to be reached with CRM implementation. With the involvement of your
+            management team our consultants define your “as is” process and
+            create the final “to be” scheme.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle26.png" alt="" />
+          </div>
+          <div class="pic-1">Development</div>
+          <div class="pic-2">
+            We calculate the budget and development time frames. For larger
+            projects with heavy customization and/or integration requirements,
+            it may be necessary to deliver the solution in several iterations,
+            in order to minimize the time before the most critical changes are
+            made.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle27.png" alt="" />
+          </div>
+          <div class="pic-1">#d Party integration</div>
+          <div class="pic-2">
+            While CAS genesisWorld is a good tool on its own, you may gain even
+            more from its integration with existing ECM, ERP or Portal products.
+            CAS genesisWorld comes with out of box integration components common
+            ERP suites such as SAGE, Navision, SAP and Oracle.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle28.png" alt="" />
+          </div>
+          <div class="pic-1">Cloud</div>
+          <div class="pic-2">
+            Make the right technology investments at the right time and on the
+            right platforms to drive innovation, increase customer loyalty and
+            grow your business.
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="second-1">
+          <div class="pic">
+            <img class="im" src="../images/Rectangle29.png" alt="" />
+          </div>
+          <div class="pic-1">Support</div>
+          <div class="pic-2">
+            Post implementation – ISSL will hold your hands until you are
+            comfortable and your new processes are well entrenched in the
+            business DNA. Plus, our staff remains available to address any
+            issues that may arise
+          </div>
+          <div class="pic-3">
+            <a href="#">Explore <l>></l></a>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- ///////////////////////////////// -->
+      <div class="third">
+        <div class="none">What Our Customers are saying about us</div>
+        <div class="third-1">
+          <div class="three">What Our Customers are saying about us</div>
+          <div class="five-0">
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+            <div class="five">
+              <div class="fi-1">
+                I was reluctant to call because I didn’t believe they would
+                really be of help but they surprised me and changed my mind.
+              </div>
+              <div class="fi-2">Babajide</div>
+              <div class="fi-3">Island Microfinance Bank</div>
+            </div>
+            <!-- /// -->
+          </div>
+        </div>
+      </div>
+      <!-- ///////////////////////////////// -->
+    </div>
+  </body>
+</html>
