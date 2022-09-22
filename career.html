@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="career.css" />
+    <title>Career</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      body {
+        font-family: "Poppins";
+        margin: 0;
+        padding: 0;
+      }
+
+      .heading {
+        background-image: url(https://github.com/Gbolahan2003/isslcomp/blob/main/shaking.png?raw=true);
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-position: cover;
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .head {
+        margin-top: 3rem;
+        color: #3a3a85;
+      }
+      .first {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #fff;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        margin-top: 2rem;
+      }
+      .btn-link {
+        display: inline-block;
+        background-color: #3a3a85;
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: all 1s;
+      }
+
+      .btn-link:hover,
+      .btn-link:active {
+        transform: scale(1.1);
+        background-color: #29296b;
+      }
+
+      .second {
+        /* width: 100vw; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d9d9d9;
+        padding: 2rem;
+      }
+      .links {
+        width: 60vw;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .sites {
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+      }
+      .fourth {
+        padding-top: 2rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
+      .four {
+        width: 60vw;
+        display: flex;
+        gap: 2rem;
+        /* flex-wrap: wrap; */
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: -2rem;
+      }
+      .for-1 {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-right: auto;
+        font-weight: 600;
+      }
+      .for-3 {
+        line-height: 1.5;
+      }
+      .div {
+        height: 10px;
+        width: 10px;
+        background-color: #fc0204;
+        border-radius: 50%;
+      }
+      .fifth {
+        display: flex;
+        flex-direction: column;
+        background-color: #3a3a85;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 2rem;
+        padding-bottom: 3rem;
+      }
+      .five {
+        color: #fff;
+        width: 60vw;
+      }
+      .secondary-header {
+        color: #fff;
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 4rem;
+        align-items: center;
+        margin-right: auto;
+      }
+      .fell {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+      }
+      .fine-2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .fine-3 {
+        line-height: 1.5;
+      }
+      .im-1 {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+      }
+      .fine {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 45%;
+      }
+
+      .sixth {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        /* gap: 2rem; */
+        padding-bottom: 3rem;
+      }
+      .six {
+        width: 60vw;
+        margin-top: 4rem;
+        display: flex;
+        gap: 8rem;
+        row-gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .set {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .seventh {
+        background: #40417366;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        /* gap: 2rem; */
+        padding-bottom: 3rem;
+      }
+      .seven {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .tom {
+        display: flex;
+        background-color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem;
+        border-radius: 6px;
+      }
+      .sev-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      .set-3 {
+        margin-top: -1rem;
+      }
+      .sev-2 a {
+        color: #407bff;
+        transition: all 1s;
+      }
+      .sev-2 a:hover,
+      .sev-2 a:active {
+        color: #29296b;
+      }
+      .se-3 {
+        color: #8f8f8f;
+        font-size: 0.8rem;
+      }
+
+      .ca {
+        height: 29px;
+        width: 119px;
+        width: 119px;
+        object-fit: cover;
+      }
+      .cal {
+        height: 39px;
+
+        width: 119px;
+      }
+
+      @media (max-width: 1145px) {
+        .first,
+        .links,
+        .four,
+        .five,
+        .seven,
+        .six {
+          width: 80vw;
+        }
+      }
+
+      @media (max-width: 936px) {
+        .four {
+          width: 60vw;
+          display: flex;
+          gap: 2rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media (max-width: 804px) {
+        .fell {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 3rem;
+        }
+      }
+      @media (max-width: 640px) {
+        .four {
+          width: 80vw;
+          display: flex;
+          gap: 2rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 609px) {
+        .fine {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          width: 78%;
+        }
+      }
+      @media (max-width: 535px) {
+        .h3 {
+          width: 74vw;
+          text-align: center;
+        }
+      }
+      @media (max-width: 399px) {
+        .first,
+        .links,
+        .four,
+        .five,
+        .seven,
+        .six {
+          width: 90vw;
+        }
+      }
+
+      @media (max-width: 399px) {
+        img.img {
+          width: 88%;
+        }
+        .fine {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          width: 90%;
+        }
+      }
+      @media (max-width: 390px) {
+        .sev {
+          width: 63vw;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading"></div>
+    <div class="body">
+      <div class="header">
+        <h1 class="head">Join ISSL Team</h1>
+      </div>
+      <!-- /// -->
+      <div class="first">
+        <div class="sent">
+          We are varied, innovative, and driven by our work's mission and the
+          satisfaction we derive from helping one another. We enjoy working
+          together to create excellent products that benefit others.
+        </div>
+        <div class="sent">
+          You'll enjoy working at ISSL if you value independence, teamwork, and
+          personal growth. Our objective is to create a workplace where staff
+          members can actively contribute to the change they care about most.
+        </div>
+        <div class="btn">
+          <a class="btn-link" href="#">See Open Positions &rarr;</a>
+        </div>
+      </div>
+      <!-- ///// -->
+      <!-- ////// -->
+    </div>
+    <div class="second">
+      <div class="links">
+        <div class="for">Find us on :</div>
+        <div class="sites">
+          <div class="site">
+            <a href="#"
+              ><img
+                class="ca"
+                src="https://github.com/Gbolahan2003/isslcomp/blob/main/linked.png?raw=true"
+                alt="LinkinId"
+            /></a>
+          </div>
+          <div class="site">
+            <a href="#"
+              ><img
+                src="https://github.com/Gbolahan2003/isslcomp/blob/main/gmail2.png?raw=true"
+                alt="LinkinId"
+            /></a>
+          </div>
+          <div class="site">
+            <a href="#"
+              ><img
+                src="https://github.com/Gbolahan2003/isslcomp/blob/main/slack2.png?raw=true"
+                alt="LinkinId"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////// -->
+    <div class="fourth">
+      <div class="four">
+        <div class="pic">
+          <img
+            class="img"
+            src="https://github.com/Gbolahan2003/isslcomp/blob/main/double.png?raw=true"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <div class="for-1">
+            <div class="div"></div>
+            OUR MISSION
+          </div>
+          <div class="for-2">
+            <h1 class="head">Flexibility, Productivity and Creativity</h1>
+          </div>
+          <div class="for-3">
+            At ISSL, we aim to make work easier for everyone, both for our own
+            employees and for businesses all around the world. This is a bold
+            and incredibly challenging mission to which our increasingly diverse
+            team is committed. We give our staff the freedom to take on the most
+            motivating tasks of their professional career. Join Us!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // -->
+    <div class="fifth">
+      <div class="five">
+        <h2 class="secondary-header">
+          <div class="div"></div>
+          OUR VISION
+        </h2>
+        <div class="fell">
+          <div class="five-1 fine">
+            <div class="fine-1">
+              <div class="images">
+                <img
+                  class="im-1"
+                  src="https://github.com/Gbolahan2003/isslcomp/blob/main/something.png?raw=true"
+                  alt="logo"
+                />
+              </div>
+            </div>
+            <div class="fine-2">Diversity</div>
+            <div class="fine-3">
+              A diverse culture creates communities that celebrates differences.
+              ISSL encourages their employees to create their unique qualities.
+            </div>
+          </div>
+          <div class="five-2 fine">
+            <div class="fine-1">
+              <div class="images">
+                <img
+                  src="https://github.com/Gbolahan2003/isslcomp/blob/main/arrow.png?raw=true"
+                  alt="logo"
+                />
+              </div>
+            </div>
+            <div class="fine-2">Personal Growth</div>
+            <div class="fine-3">
+              Growth is one of the top core values for ISSL. We offer personal
+              growth for employees to pursue personal development.
+            </div>
+          </div>
+          <div class="five-3 fine">
+            <div class="fine-1">
+              <div class="images">
+                <img
+                  src="https://github.com/Gbolahan2003/isslcomp/blob/main/book2.png?raw=true"
+                  alt="logo"
+                />
+              </div>
+            </div>
+            <div class="fine-2">Always Learn</div>
+            <div class="fine-3">
+              The field of technology is ever-changing. We need to get the value
+              of continuous learning.
+            </div>
+          </div>
+          <div class="five-3 fine">
+            <div class="fine-1">
+              <div class="images">
+                <img
+                  class="im-1"
+                  src="https://github.com/Gbolahan2003/isslcomp/blob/main/t2.png?raw=true"
+                  alt="logo"
+                />
+              </div>
+            </div>
+            <div class="fine-2">Team Work</div>
+            <div class="fine-3">
+              We assign teams to tasks to promote teamwork which encourages
+              communication and the flow of ideas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////// -->
+
+    <div class="sixth">
+      <h1 class="head">Benefits</h1>
+      <div class="h3">
+        Otherwise known as the stuff you no longer get from your parents.
+      </div>
+      <div class="six">
+        <div class="six-1 set">
+          <div class="set-1">
+            <img
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/Emoji1.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="set-2">Learning &</div>
+          <div class="set-3">Development</div>
+        </div>
+        <div class="six-2 set">
+          <div class="set-1">
+            <img
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/money.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="set-2">Paid Volunteer</div>
+          <div class="set-3">time</div>
+        </div>
+        <div class="six-3 set">
+          <div class="set-1">
+            <img
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/internet.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="set-2">Fast</div>
+          <div class="set-3">Internet</div>
+        </div>
+        <div class="six-4 set">
+          <div class="set-1">
+            <img
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/clock.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="set-2">Quality Work</div>
+          <div class="set-3">Time</div>
+        </div>
+
+        <div class="six-5 set">
+          <div class="set-1">
+            <img
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/video.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="set-2">Thank God its</div>
+          <div class="set-3">Friday</div>
+        </div>
+        <div class="six-6 set">
+          <div class="set-1">
+            <img
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/chair.png?raw=true"
+              alt=""
+            />
+          </div>
+          <div class="set-2">Comfortable</div>
+          <div class="set-3">Workplace</div>
+        </div>
+      </div>
+    </div>
+    <!-- //////// -->
+    <div class="seventh">
+      <h1 class="head">Career Opportunities</h1>
+      <div class="sev">See if there’s a position for you - we’re hiring!</div>
+      <div class="seven">
+        <div class="seven-1 tom">
+          <div class="sev-1">
+            <div class="se-1">Senior Product Design</div>
+            <div class="se-3">Full time</div>
+          </div>
+          <div class="sev-2"><a href="#">Apply</a></div>
+        </div>
+        <div class="seven-2 tom">
+          <div class="sev-1">
+            <div class="se-1">Senior Product Design</div>
+            <div class="se-3">Full time</div>
+          </div>
+          <div class="sev-2"><a href="#">Apply</a></div>
+        </div>
+        <div class="seven-3 tom">
+          <div class="sev-1">
+            <div class="se-1">Senior Product Design</div>
+            <div class="se-3">Full time</div>
+          </div>
+          <div class="sev-2"><a href="#">Apply</a></div>
+        </div>
+        <div class="seven-4 tom">
+          <div class="sev-1">
+            <div class="se-1">Senior Product Design</div>
+            <div class="se-3">Full time</div>
+          </div>
+          <div class="sev-2"><a href="#">Apply</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
