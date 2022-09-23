@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="land.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins";
+      }
+      .header-container {
+        background-image: url(https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle1251.png?raw=true);
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: cover;
+        /* background-size: contain; */
+        /* justify-content: center; */
+        align-items: center;
+        /* width: 100vw; */
+        height: 95vh;
+        padding-left: 6rem;
+      }
+      .head-contain {
+        width: 50vw;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+      }
+      .width {
+        width: 85vw;
+      }
+      .head-text {
+        font-size: 2.3rem;
+        font-weight: 600;
+        width: 35vw;
+      }
+      .head-text-2 {
+        font-size: 1.1rem;
+      }
+
+      .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      .first-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .first-text-1 {
+        line-height: 1.7;
+        color: #222222;
+      }
+      img.first-img {
+        height: 30rem;
+        width: 29rem;
+      }
+      .one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      .first-heading {
+        font-weight: 500;
+      }
+      p.red {
+        background-color: #f5070f;
+        height: 2.5px;
+        margin-top: -1.3rem;
+        width: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      .two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 4rem;
+      }
+      .finally {
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+      }
+
+      .two-second-2 {
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .the-head {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+      .second-text {
+        line-height: 1.7;
+        color: #222222;
+      }
+      .second-img {
+        height: 24rem;
+        width: 30rem;
+      }
+
+      .link-2 {
+        display: flex;
+        font-size: 1.1rem;
+        color: #222;
+        gap: 0.2rem;
+        /* font-weight: 600; */
+        text-decoration: none;
+        transition: all 1s;
+      }
+      .bra {
+        color: #eb3238;
+        font-size: 1.2rem;
+        /* font-weight: 600; */
+      }
+      .link-2:hover,
+      .link-2:active {
+        font-size: 1.3rem;
+      }
+
+      .second-2 {
+        padding-bottom: 5rem;
+        border-bottom: 1px solid #c0c6cb;
+      }
+
+      .three {
+        padding-bottom: 5rem;
+        border-bottom: 1px solid #c0c6cb;
+      }
+
+      .four {
+        border: none;
+      }
+      .final {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      .finally {
+        /* position: relative; */
+      }
+      .final-img {
+        /* position: absolute; */
+      }
+
+      .final-text {
+        display: flex;
+        flex-direction: column;
+        width: 13rem;
+        margin-right: 4rem;
+        justify-content: center;
+        gap: 3rem;
+        padding: 1rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 25%) 0px 2px 10px;
+
+        transform: translate(40%, -45%);
+      }
+      .ex {
+        font-size: 0.8rem;
+      }
+      .ex .bra {
+        font-size: 0.8rem;
+      }
+      @media (max-width: 1000px) {
+        .width {
+          width: 90vw;
+        }
+        .two {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap: 2rem;
+        }
+        .two {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .finally {
+          display: flex;
+          gap: 4rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        .head-text {
+          font-size: 2.3rem;
+          font-weight: 600;
+          width: 50vw;
+        }
+      }
+
+      @media (max-width: 930px) {
+        .two {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .width {
+          width: 70vw;
+        }
+        .one {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+      @media (max-width: 800px) {
+        .head-text {
+          font-size: 2.3rem;
+          font-weight: 600;
+          width: 62vw;
+        }
+        .head-contain {
+          width: 67vw;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          gap: 2.8rem;
+        }
+      }
+
+      @media (max-width: 703px) {
+        .first {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 3rem;
+          margin-bottom: 5rem;
+        }
+      }
+
+      @media (max-width: 590px) {
+        .head-text {
+          font-size: 2.3rem;
+          font-weight: 600;
+          width: 75vw;
+        }
+        .head-contain {
+          width: 80vw;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          gap: 2.8rem;
+        }
+        .width {
+          width: 80vw;
+        }
+        .header-container {
+          background-image: url(https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle1251.png?raw=true);
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: cover;
+          /* background-size: contain; */
+          /* justify-content: center; */
+          align-items: center;
+          /* width: 100vw; */
+          height: 95vh;
+          padding-left: 2rem;
+        }
+
+        .final-text {
+          display: flex;
+          flex-direction: column;
+          width: 13rem;
+          /* margin-right: 4rem; */
+          justify-content: center;
+          gap: 3rem;
+          padding: 1rem;
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgb(0 0 0 / 25%) 0px 2px 10px;
+          transform: translate(13%, -45%);
+          transform: translate(40%, -45%);
+        }
+
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: "Poppins";
+        }
+        img.pic {
+          width: 26rem;
+        }
+        img.first-img {
+          height: 30rem;
+          width: 22rem;
+        }
+        .second-img {
+          height: 20rem;
+          width: 24rem;
+        }
+      }
+      @media (max-width: 400px) {
+        .width {
+          width: 90vw;
+        }
+        .head-text {
+          font-size: 2rem;
+          font-weight: 600;
+          width: 92vw;
+        }
+        img.pic {
+          width: 21rem;
+        }
+        img.first-img {
+          height: 24rem;
+          width: 22rem;
+        }
+        .second-img {
+          height: 16rem;
+          width: 19rem;
+        }
+      }
+      @media (max-width: 360px) {
+        .width {
+          width: 96vw;
+          margin-left: 1rem;
+        }
+
+        .width {
+          width: 96vw;
+          /* margin-left: 1rem; */
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
+        img.first-img {
+          height: 16rem;
+          width: 15rem;
+        }
+        img.pic {
+          width: 17rem;
+        }
+        .second-img {
+          height: 15rem;
+          width: 17rem;
+        }
+
+        .header-container {
+          background-image: url(https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle1251.png?raw=true);
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: cover;
+          /* background-size: contain; */
+          /* justify-content: center; */
+          align-items: center;
+          /* width: 100vw; */
+          height: 95vh;
+          padding-left: 1rem;
+        }
+        .head-text {
+          font-size: 1.5rem;
+          font-weight: 600;
+          width: 92vw;
+        }
+
+        .the-head {
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+        .first-heading {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        img.am-pic {
+          width: 15rem;
+        }
+        .final-text {
+          display: flex;
+          flex-direction: column;
+          width: 10rem;
+          /* margin-right: 4rem; */
+          justify-content: center;
+          gap: 3rem;
+          padding: 1rem;
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgb(0 0 0 / 25%) 0px 2px 10px;
+          transform: translate(13%, -45%);
+          transform: translate(39%, -36%);
+        }
+      }
+
+      @media (max-width: 300px) {
+        img.am-pic {
+          width: 13rem;
+        }
+        .final-text {
+          display: flex;
+          flex-direction: column;
+          width: 8rem;
+          /* margin-right: 4rem; */
+          justify-content: center;
+          gap: 2rem;
+          padding: 1rem;
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgb(0 0 0 / 25%) 0px 2px 10px;
+          transform: translate(13%, -45%);
+          transform: translate(39%, -30%);
+        }
+        .width {
+          width: 90vw;
+        }
+        .second-img {
+          height: 13rem;
+          width: 15rem;
+        }
+        img.pic {
+          width: 15rem;
+        }
+        .final-1 {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="head-contain">
+        <div class="head-text">Re-think applications; Re-imagine business</div>
+        <div class="head-text-2">
+          Lörem ipsum nyst prose judyssade, beligen. Atest laved prosamma fast
+          intrangen: dådat. Ufod diligt kase saskap. Lykrodir etenade. `
+        </div>
+      </div>
+    </div>
+    <!-- // -->
+    <div class="first">
+      <div class="one width">
+        <div class="first-1">
+          <div class="first-text-1">
+            ISSL is your trusted partner to help you simplify, modernize, and
+            accelerate mission-critical applications that support business
+            agility and growth. Take advantage of the latest digital platforms
+            with both custom and packaged applications, ensure resiliency,
+            launch new products and enter new markets with minimal disruption.
+          </div>
+          <div class="first-text-1">
+            Our services help you elevate customer and employee experiences by
+            improving end-to-end personalization and unlocking data for deeper
+            insights. Find out how to drive down costs, creating more efficient
+            and effective business processes that enable you to reimagine your
+            business.
+          </div>
+        </div>
+        <div class="first-2">
+          <img
+            class="first-img"
+            src="https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle226.png?raw=true"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////// -->
+    <div class="second">
+      <div class="second-2 width">
+        <h1 class="first-heading">Our Offerings</h1>
+        <p class="red"></p>
+        <div class="two">
+          <div class="two-second">
+            <img
+              class="second-img"
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle30.png?raw=true"
+            />
+          </div>
+          <div class="two-second-2">
+            <div class="the-head">Application Modernization</div>
+            <div class="second-text">
+              We use ideation, pilots and proofs of concept to quickly identify
+              modernization priorities, building and deploying modernization
+              sprints at scale. We continuously optimize processes to reduce
+              cost and risk while increasing speed at every stage. We help
+              accelerate your path to innovation and realize business benefits
+              faster. From improved customer experiences and retention, to
+              increased sales and a reduction of costs, we help you to assess
+              and prioritize what will enable you to meet your organizational
+              goals​.
+            </div>
+            <div class="second-link">
+              <a href="#" class="link-2"
+                ><div class="explore">Explore</div>
+                <div class="bra">></div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //// -->
+    <div class="second">
+      <div class="two three width">
+        <div class="two-second-2">
+          <div class="the-head">Enterprise Applications and SaaS</div>
+          <div class="first-1">
+            <div class="first-text-1">
+              Our Enterprise Applications and SaaS services help customers
+              develop, integrate, implement and manage enterprise applications
+              across lines of business.
+            </div>
+            <div class="first-text-1">
+              Our experts bring industry, business process, systems integration
+              and technical delivery experience. They deliver innovation and
+              value through end-to-end solutions based on third-party
+              software-as-a-service solutions and enterprise application
+              software for cloud, on-premises and hybrid environments.
+            </div>
+          </div>
+          <div class="second-link">
+            <a href="#" class="link-2"
+              ><div class="explore">Explore</div>
+              <div class="bra">></div></a
+            >
+          </div>
+        </div>
+        <div class="three-1">
+          <img
+            class="first-img"
+            src="https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle1.png?raw=true"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- /////// -->
+    <div class="second fourth">
+      <div class="second-2 width four">
+        <div class="two">
+          <div class="two-second">
+            <img
+              class="pic"
+              src="https://github.com/Gbolahan2003/isslcomp/blob/main/Rectangle1303.png?raw=true"
+            />
+          </div>
+          <div class="two-second-2">
+            <div class="the-head">Modern Applications Development</div>
+            <div class="second-text">
+              Our Modern Applications Development services enable enterprises to
+              achieve the agility required to improve time to market, reduce
+              costs, attain resiliency and enhance customer experiences, while
+              positioning for growth through innovation. We deliver outcomes
+              through data-driven assessments, rapid development of
+              cloud-enabled and cloud native applications, and
+              APIs/microservices, while incorporating Lean-Agile and DevOps
+              principles into our end-to-end software engineering methods and
+              tooling.
+            </div>
+            <div class="second-link">
+              <a href="#" class="link-2"
+                ><div class="explore">Explore</div>
+                <div class="bra">></div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////// -->
+    <div class="final">
+      <div class="five width">
+        <h1 class="first-heading">Explore our Products</h1>
+        <p class="red"></p>
+        <div class="finally">
+          <div class="final-img">
+            <img
+              class="am-pic"
+              src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle132.png?raw=true"
+            />
+            <div class="final-text">
+              <div class="final-1">
+                Do more than banking with our IntegraBanking Application
+              </div>
+              <div class="final-1">
+                <a href="#" class="link-2 ex"
+                  ><div class="explore">Explore product</div>
+                  <div class="bra">></div></a
+                >
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="final-img">
+            <img
+              class="am-pic"
+              src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle132.png?raw=true"
+            />
+            <div class="final-text">
+              <div class="final-1">
+                Digital onboarding processes for SME and Corporate clients
+              </div>
+              <div class="final-1">
+                <a href="#" class="link-2 ex"
+                  ><div class="explore">Explore product</div>
+                  <div class="bra">></div></a
+                >
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="final-img">
+            <img
+              class="am-pic"
+              src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle132.png?raw=true"
+            />
+            <div class="final-text">
+              <div class="final-1">
+                Online banking transaction with mobile banking application
+              </div>
+              <div class="final-1">
+                <a href="#" class="link-2 ex"
+                  ><div class="explore">Explore product</div>
+                  <div class="bra">></div></a
+                >
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
